@@ -20,5 +20,5 @@ test('Realizando Login Correto', async ({ page }) => {
     await page.fill('#input-confirm', '12345678')
 
     await page 
-    .fill('#')
+    .check('#input-newsletter-yes[value="1"]')
 })
