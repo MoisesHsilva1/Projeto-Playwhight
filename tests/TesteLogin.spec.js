@@ -15,10 +15,9 @@ test('Realizando Login Correto', async ({ page }) => {
     await page 
     .fill('#input-lastname', 'Ultimo nome teste')
 
-    const inputEmail = '#inputEmail'
     await page
-    .fill(inputEmail, 'teste@gmail.com') 
+    .fill('#input-email', 'teste@gmail.com') 
    
-
-
+    await page 
+    .fill('#input-telephone', '11999999999')
 })
