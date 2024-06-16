@@ -20,4 +20,13 @@ test('Realizando Login Correto', async ({ page }) => {
    
     await page 
     .fill('#input-telephone', '11999999999')
+
+    await page
+    .fill('#input-password', '12345678')
+
+    await page 
+    .fill('#input-confirm', '12345678')
+
+    await page 
+    .fill('$')
 })
