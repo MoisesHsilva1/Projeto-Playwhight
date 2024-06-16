@@ -1,25 +1,24 @@
-import { test, expect } from '@playwright/test'
+import {test} from '@playwright/test'
 
 test.use({
     locale: 'pt-BR',
     headless: true
 })
 
-test('has titlle', async ({ page }) => {
+test('Realizando Login Correto', async ({ page }) => {
     await page
-    .goto('https://phptravels.org/register.php')
-    
-    const inputFirstName =  '#inputFirstName'
-    await page
-    .fill(inputFirstName, 'Nome Teste')
-   
+    .goto('https://ecommerce-playground.lambdatest.io/index.php?route=account/register')
 
-    const inputLastName = '#inputLastName'
+    await page
+    .fill('#input-firstname', 'Nome Teste')
+
     await page 
-    .fill(inputLastName, 'Ultimo nome teste')
+    .fill('#input-lastname', 'Ultimo nome teste')
 
     const inputEmail = '#inputEmail'
     await page
     .fill(inputEmail, 'teste@gmail.com') 
    
+
+
 })
