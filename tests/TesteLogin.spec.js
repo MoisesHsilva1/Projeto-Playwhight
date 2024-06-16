@@ -7,10 +7,19 @@ test.use({
 
 test('has titlle', async ({ page }) => {
     await page
-    .goto('https://ecommerce-playground.lambdatest.io/index.php?route=account/login')
+    .goto('https://phptravels.org/register.php')
     
-    const inputSelector = "#input-email"
+    const inputFirstName =  '#inputFirstName'
     await page
-    .fill(inputSelector, 'Teste teste' )
+    .fill(inputFirstName, 'Nome Teste')
+   
 
+    const inputLastName = '#inputLastName'
+    await page 
+    .fill(inputLastName, 'Ultimo nome teste')
+
+    const inputEmail = '#inputEmail'
+    await page
+    .fill(inputEmail, 'teste@gmail.com') 
+   
 })
