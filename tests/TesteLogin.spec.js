@@ -11,7 +11,6 @@ test('Realizando Login Correto', async ({ page }) => {
 
     await page
     .fill('#input-firstname', 'Nome Teste')
-
     await page 
     .fill('#input-lastname', 'Ultimo nome teste')
 
@@ -28,5 +27,5 @@ test('Realizando Login Correto', async ({ page }) => {
     .fill('#input-confirm', '12345678')
 
     await page 
-    .fill('$')
+    .fill('#')
 })
