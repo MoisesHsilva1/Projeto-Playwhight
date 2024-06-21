@@ -23,4 +23,5 @@ test('Realizando Login Correto', async ({ page }) => {
     .check('#input-newsletter-yes[value="1"]')
 
     await page
+    .click('#btn.btn-primary')
 })
