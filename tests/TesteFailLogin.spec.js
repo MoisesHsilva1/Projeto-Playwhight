@@ -9,7 +9,8 @@ test('Teste visualizando as mensagem de obrigatoridade dos campos',  async ({ pa
     const mensagemAddressFail  = 'Address is required.'
     const mensagemCityFail =  'City is required'
     const mensagemFailState = 'State is required.'
-
+    const mensagemFailZIPCODE = 'Zip Code is required.'
+    const mensagemFailSSN =  'Social Security Number is required.'
     const buttonFail =  'input.button'
 
     await page.click(buttonFail)
@@ -19,9 +20,10 @@ test('Teste visualizando as mensagem de obrigatoridade dos campos',  async ({ pa
     await page.getByRole('span', {mensagemAddressFail}).isVisible();
     await page.getByRole('span', {mensagemCityFail}).isVisible();
     await page.getByRole('span', {mensagemFailState}).isVisible();
+    await page.getByRole('span', {mensagemFailZIPCODE}).isVisible();
+    await page.getByRole('span', {mensagemFailSSN}).isVisible();
 
-
-    if(mensagemCityFail) {
+    if(mensagemFailName || mensagemFailLastName) {
         console.log('mensagem de falha esta visivel')
     } else {
         console.log('A mensagem não esta visivel')
