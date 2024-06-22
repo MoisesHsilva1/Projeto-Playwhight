@@ -6,9 +6,11 @@ test.use({
 })
 
 test('Realizando Login Correto', async ({ page }) => {
+    const Login = require('../../Users.json');
+
     await page.goto('https://parabank.parasoft.com/parabank/lookup.htm')
      
-    await page.fill('#firstName', 'Teste Name');
+    await page.fill('#firstName', Login.FistName);
 
     await page.fill('#lastName', 'Last Name test');
 
