@@ -6,21 +6,11 @@ test.use({
 })
 
 test('Realizando Login Correto', async ({ page }) => {
-    await page
-    .goto('https://ecommerce-playground.lambdatest.io/index.php?route=account/register')
+    await page.goto('https://parabank.parasoft.com/parabank/lookup.htm')
+     
+    await page.fill('#firstName', 'Teste Name');
+    await page.fill('#lastname', 'Last Name test');
 
-    await page.fill('#input-firstname', 'Nome Teste')
-    await page.fill('#input-lastname', 'Ultimo nome teste')
-
-    await page.fill('#input-email', 'teste@gmail.com') 
-   
-    await page.fill('#input-telephone', '11999999999')
-
-    await page.fill('#input-password', '12345678')
-    await page.fill('#input-confirm', '12345678')
-
-    await page.check('.custom-control-label');
-
-    await page
-    .locator('submit').click()
+    await page.fill('');
+    
 })
