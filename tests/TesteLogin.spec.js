@@ -19,9 +19,8 @@ test('Realizando Login Correto', async ({ page }) => {
     await page.fill('#input-password', '12345678')
     await page.fill('#input-confirm', '12345678')
 
-    await page 
-    .check('#input-newsletter-yes[value="1"]')
+    await page.check('.custom-control-label');
 
     await page
-    .click('#btn.btn-primary')
+    .locator('submit').click()
 })
