@@ -7,8 +7,9 @@ test('Teste visualizando as mensagem de obrigatoridade dos campos',  async ({ pa
     const mensagemFailName =  'First name is required.';
     const mensagemFailLastName = 'Last name is required.';
     const mensagemAddressFail  = 'Address is required.'
-    const mensagemCityFail =  'span'
-   
+    const mensagemCityFail =  'City is required'
+    const mensagemFailState = 'State is required.'
+
     const buttonFail =  'input.button'
 
     await page.click(buttonFail)
@@ -16,7 +17,8 @@ test('Teste visualizando as mensagem de obrigatoridade dos campos',  async ({ pa
     await page.getByRole('span', {mensagemFailName}).isVisible();
     await page.getByRole('span', {mensagemFailLastName}).isVisible();
     await page.getByRole('span', {mensagemAddressFail}).isVisible();
-    await page.getByRole(mensagemCityFail, { name: 'City is required.'}).isVisible();
+    await page.getByRole('span', {mensagemCityFail}).isVisible();
+    await page.getByRole('span', {mensagemFailState}).isVisible();
 
 
     if(mensagemCityFail) {
