@@ -9,8 +9,14 @@ test('Realizando Login Correto', async ({ page }) => {
     await page.goto('https://parabank.parasoft.com/parabank/lookup.htm')
      
     await page.fill('#firstName', 'Teste Name');
+
     await page.fill('#lastname', 'Last Name test');
 
-    await page.fill('');
-    
+    await page.fill('#address.street', 'Rua da casa do QA');
+
+    await page.fill('#address.city', 'Cidade do QA')
+
+    await page.fill('#address.state', 'São Paulo')
+
+    await page.fill('')
 })
