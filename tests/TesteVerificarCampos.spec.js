@@ -7,9 +7,10 @@ test('Teste visualizando as mensagem de obrigatoridade dos campos',  async ({ pa
     const LastName =  'input#lastName';
     const Addres = 'input#address\\.street';
     const City = 'input#address\\.city'
-    const state = 'input#addres\\.state';
+    const state = 'input#address\\.state';
     const ZipCode = 'input#address\\.zipCode';
-    const SSN = 'input#ssn';
+    const ssn = 'input#ssn';
+    const button = 'input.button'
 
     await page.goto(url)
 
@@ -19,5 +20,6 @@ test('Teste visualizando as mensagem de obrigatoridade dos campos',  async ({ pa
     await page.locator(City).waitFor({state: 'visible'});
     await page.locator(state).waitFor({state: 'visible'});
     await page.locator(ZipCode).waitFor({state: 'visible'});
-    await page.locator(SSN).waitFor({state: 'visible'});
+    await page.locator(ssn).waitFor({state: 'visible'});
+    await page.locator(button).waitFor({state: 'visible'});
 })
