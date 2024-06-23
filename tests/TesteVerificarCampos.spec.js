@@ -9,5 +9,5 @@ test('Teste visualizando as mensagem de obrigatoridade dos campos',  async ({ pa
 
     await page.goto(url)
 
-    await page.isVisible(FistName)
+    await page.locator(FistName).waitFor({ state: 'visible' });
 })
