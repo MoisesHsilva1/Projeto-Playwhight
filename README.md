@@ -19,7 +19,7 @@
 
 
 <h2>Plataforma usada para testes</h2>
-<p>Acesso a plataforma do  </p>
+<p>Acesso a plataforma do ParaBank </p>
 <a href="https://parabank.parasoft.com/parabank/index.htm"> ParaBank</a>
 
 
