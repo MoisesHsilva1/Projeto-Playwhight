@@ -1,4 +1,5 @@
-<h1 align="center"> Testes automatizados de interface e funcionaliddades</h1>
+<h1 align="center"> Testes automatizados de Resgistro de usuario 
+</h1>
 
 <h2>Descrição do projeto</h2>
 <p>O projeto foi desenvolvido com objetivo de aprofundar conhecimentos em playwright e javascript  e lidar com testes em WebKit  foi realizado testes automatizado end-to-end simulando 
@@ -13,27 +14,22 @@
 <h2>Tecnologias utilizadas</h2>
 
 - ``JavaScript``
-- ``Cypress``
-
+- ``Playwright``
+- ``TyperScript``
 
 
 <h2>Plataforma usada para testes</h2>
-<p>Acesso a plataforma do todoMVC </p>
-<a href="https://todomvc.com/examples/react/dist/"> To-do-list React</a>
+<p>Acesso a plataforma do  </p>
+<a href="https://parabank.parasoft.com/parabank/index.htm"> ParaBank</a>
 
 
 
 <h2>Demonstração da Aplicação</h2>
-<p>Teste de adicionar tarefa, marcar como concluida, como não concluida e apaga. <br>
-   Esse teste simula como um usuario tivesse adicionando diversas tarefas e selecionando uma como concluidas e fazendo esse comportamento sem selecionar como concluidas. 
-</p>
+<p>Teste simula o regitro de usuario </p>
  
 
-https://github.com/MoisesHsilva1/Teste-de-interface-com-cypress/assets/142702205/a8782946-dfc8-4ee5-a071-3ad0593b54ff
+https://github.com/MoisesHsilva1/Teste-de-interface-com-cypress/assets/142702205/bde53327-bcef-464b-9e36-e1c2821ba75f
 
-<h2>Licenças usadas</h2>
-
-<a href="https://github.com/tastejs/todomvc"> TodoMVC no github</a>
 
 # Autor
 
