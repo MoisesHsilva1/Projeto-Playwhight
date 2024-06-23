@@ -10,7 +10,7 @@ test('Teste visualizando as mensagem de obrigatoridade dos campos',  async ({ pa
     const state = 'input#address\\.state';
     const ZipCode = 'input#address\\.zipCode';
     const ssn = 'input#ssn';
-    const button = 'input.button'
+    const button = 'input.button[type="submit"][value="Find My Login Info"]'
 
     await page.goto(url)
 
