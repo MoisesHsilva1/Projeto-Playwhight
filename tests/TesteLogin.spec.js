@@ -34,5 +34,7 @@ test('Realizando Login Correto', async ({ page }) => {
     
     await page.fill('#ssn', RegisterUser.SSN);
 
+    await page
+
     await page.click(ButonCadastrar); 
 })
